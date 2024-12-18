@@ -7,7 +7,7 @@ I will be writing this in the top 10 programming languages according to the [IEE
 For now, here is the list:
 
 - [x] Python
-- [ ] Java
+- [x] Java
 - [x] JavaScript
 - [ ] C++
 - [ ] C#
