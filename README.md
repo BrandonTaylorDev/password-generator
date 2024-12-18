@@ -11,7 +11,7 @@ For now, here is the list:
 - [x] JavaScript
 - [ ] C++
 - [ ] C#
-- [ ] Go
+- [x] Go
 - [ ] C
 - [x] Rust
 - [ ] PHP
