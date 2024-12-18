@@ -8,7 +8,7 @@ For now, here is the list:
 
 - [x] Python
 - [ ] Java
-- [ ] JavaScript
+- [x] JavaScript
 - [ ] C++
 - [ ] C#
 - [ ] Go
