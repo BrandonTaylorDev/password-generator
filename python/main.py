@@ -13,40 +13,42 @@ def get_password_length() -> int:
 def user_wants_uppers() -> bool:
   stdin = input("Use uppercase letters? (Y/n)\n> ")
 
-  return stdin.lower() == "y"
+  return stdin.lower() == "y" or stdin == ""
 
 def user_wants_lowers() -> bool:
   stdin = input("Use lowercase letters? (Y/n)\n> ")
 
-  return stdin.lower() == "y"
+  return stdin.lower() == "y" or stdin == ""
 
 def user_wants_numberals() -> bool:
   stdin = input("Use numbers? (Y/n)\n> ")
 
-  return stdin.lower() == "y"
+  return stdin.lower() == "y" or stdin == ""
 
 def user_wants_symbols() -> bool:
   stdin = input("Use symbols? (Y/n)\n> ")
 
-  return stdin.lower() == "y"
+  return stdin.lower() == "y" or stdin == ""
 
 def gen_password(length: int, upper: bool, lower: bool, numeral: bool, symbol: bool) -> str:
+  
+  chars = []
+
+  if not upper and not lower and not numeral and not symbol:
+    upper = lower = numeral = symbol = True
     
-    chars = []
+  print(upper, lower, numeral, symbol)
 
-    if not (upper or lower or numeral or symbol):
-        upper = lower = numeral = symbol = True
-
-    if upper:
-        chars.extend(string.ascii_uppercase)
-    if lower:
-        chars.extend(string.ascii_lowercase)
-    if numeral:
-        chars.extend(string.digits)
-    if symbol:
-        chars.extend("!@#$%^&*()_+-=[]{}|;:,.<>")
-
-    return ''.join(random.choice(chars) for _ in range(length))
+  if upper:
+    chars.extend(string.ascii_uppercase)
+  if lower:
+    chars.extend(string.ascii_lowercase)
+  if numeral:
+    chars.extend(string.digits)
+  if symbol:
+    chars.extend("!@#$%^&*()_+-=[]{}|;:,.<>")
+    
+  return ''.join(random.choice(chars) for _ in range(length))
   
 if __name__ == "__main__":
   password_length = get_password_length()
