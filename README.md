@@ -9,10 +9,10 @@ For now, here is the list:
 - [x] Python
 - [x] Java
 - [x] JavaScript
-- [ ] C++
+- [x] C++
 - [ ] C#
 - [x] Go
-- [ ] C
+- [x] C
 - [x] Rust
-- [ ] PHP
+- [x] PHP
 - [ ] Shell
