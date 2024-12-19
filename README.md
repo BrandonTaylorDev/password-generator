@@ -10,7 +10,7 @@ For now, here is the list:
 - [x] Java
 - [x] JavaScript
 - [x] C++
-- [ ] C#
+- [x] C#
 - [x] Go
 - [x] C
 - [x] Rust
